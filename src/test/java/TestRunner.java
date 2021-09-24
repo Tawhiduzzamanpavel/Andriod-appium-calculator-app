@@ -14,19 +14,25 @@ public class TestRunner extends BasePage {
         objTest=new TestCase();
         String res =objTest.doSum();
         Assert.assertEquals(res,"12");
+        objTest.doClear();
+
     }
+
     @Test
     public void runApp1() throws IOException, InterruptedException {
         objTest=new TestCase();
         String res =objTest.doSubtraction();
         Assert.assertEquals(res,"6");
+        objTest.doClear();
 
     }
+
     @Test
     public void runApp2() throws IOException, InterruptedException {
         objTest=new TestCase();
         String res =objTest.doMultiplication();
         Assert.assertEquals(res,"35");
+        objTest.doClear();
 
     }
     @Test
@@ -34,6 +40,8 @@ public class TestRunner extends BasePage {
         objTest=new TestCase();
         String res =objTest.doDivision();
         Assert.assertEquals(res,"5");
+        objTest.doClear();
 
     }
+
 }

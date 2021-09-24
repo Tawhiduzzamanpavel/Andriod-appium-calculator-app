@@ -16,6 +16,8 @@ public class TestCase extends BasePage{
     MobileElement btn7;
     @FindBy(id="com.google.android.calculator:id/result_preview")
     MobileElement btnPreview;
+    @FindBy(id="com.google.android.calculator:id/result_final")
+    MobileElement btnFinal;
     @FindBy(id = "com.google.android.calculator:id/digit_8")
     MobileElement btn8;
     @FindBy(id="com.google.android.calculator:id/op_sub")
@@ -26,6 +28,10 @@ public class TestCase extends BasePage{
     MobileElement btnDivide;
     @FindBy(id = "com.google.android.calculator:id/op_mul")
     MobileElement btnMultiply;
+    @FindBy(id = "com.google.android.calculator:id/clr")
+    MobileElement btnClear;
+    @FindBy(id = "com.google.android.calculator:id/eq")
+    MobileElement btnEqual;
 
 
     public TestCase() throws IOException, InterruptedException
@@ -37,28 +43,37 @@ public class TestCase extends BasePage{
         btn5.click();
         btnPlus.click();
         btn7.click();
-        return btnPreview.getText();
+        btnEqual.click();
+        return btnFinal.getText();
         //Assert.assertEquals(btnPreview.getText(),"12");
     }
     public String doSubtraction() throws InterruptedException, MalformedURLException {
         btn7.click();
         btnMinus.click();
         btn1.click();
-        return btnPreview.getText();
+        btnEqual.click();
+        return btnFinal.getText();
         //Assert.assertEquals(btnPreview.getText(),"12");
     }
     public String doMultiplication() throws InterruptedException, MalformedURLException {
         btn7.click();
         btnMultiply.click();
         btn5.click();
-        return btnPreview.getText();
+        btnEqual.click();
+        return btnFinal.getText();
         //Assert.assertEquals(btnPreview.getText(),"35");
     }
     public String doDivision() throws InterruptedException, MalformedURLException {
         btn5.click();
         btnDivide.click();
         btn1.click();
-        return btnPreview.getText();
+        btnEqual.click();
+        return btnFinal.getText();
+        //Assert.assertEquals(btnPreview.getText(),"5");
+    }
+    public void doClear(){
+        btnClear.click();
+        //return btnPreview.getText();
         //Assert.assertEquals(btnPreview.getText(),"5");
     }
 }

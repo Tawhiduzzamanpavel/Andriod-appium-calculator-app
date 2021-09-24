@@ -1,0 +1,1 @@
+{"uuid":"44efcb61-8054-4d28-8c1d-d07a558bba01","name":"Calculator automation","children":["17de6abd-603b-4b1d-8368-1a225a58585d"],"befores":[],"afters":[{"name":"tearDown","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1632466567040,"stop":1632466567339}],"links":[],"start":1632466561207,"stop":1632466567340}

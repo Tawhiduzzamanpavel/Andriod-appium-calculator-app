@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-21T18:54:25" hostname="PAVEL" time="2.621">
+<testsuite name="TestRunner" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-09-24T06:59:24" hostname="PAVEL" time="18.733">
   <properties/>
-  <testcase name="runApp3" classname="TestRunner" time="2.621"/>
+  <testcase name="runApp" classname="TestRunner" time="4.659"/>
+  <testcase name="runApp1" classname="TestRunner" time="5.64"/>
+  <testcase name="runApp2" classname="TestRunner" time="3.716"/>
+  <testcase name="runApp3" classname="TestRunner" time="4.513"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
